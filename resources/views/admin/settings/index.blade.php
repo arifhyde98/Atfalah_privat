@@ -90,7 +90,7 @@
             <a href="{{ route('home') }}" target="_blank" class="px-4 py-2.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold">
                 Lihat Website Utama
             </a>
-            <button type="submit" class="px-6 py-2.5 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow transition-colors">
+            <button type="submit" class="px-6 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow transition-colors">
                 Simpan Perubahan Landing Page
             </button>
         </div>

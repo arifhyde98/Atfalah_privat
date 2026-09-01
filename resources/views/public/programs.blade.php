@@ -6,7 +6,7 @@
 <div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10">
         <div class="text-gold-400 font-quran text-2xl mb-2">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
             <span>۞</span> Manhaj Pembelajaran <span>۞</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Program Pembelajaran ATFALAH</h1>
@@ -21,7 +21,7 @@
         @foreach($programs as $prog)
             <div id="{{ $prog->slug }}" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 <div class="lg:col-span-7 space-y-4">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 text-primary-800 text-xs font-bold uppercase tracking-wider">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 text-primary-800 text-xs font-bold uppercase tracking-wider">
                         {{ $prog->tagline }}
                     </div>
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">{{ $prog->name }}</h2>
@@ -49,7 +49,7 @@
                     <div>
                         <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
                             <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700">Silabus & Modul Belajar</h3>
-                            <span class="text-xs font-semibold text-primary-700 bg-primary-100 px-2 py-0.5 rounded-full">{{ $prog->curriculumItems->count() }} Topik</span>
+                            <span class="text-xs font-semibold text-primary-700 bg-rose-100 px-2 py-0.5 rounded-full">{{ $prog->curriculumItems->count() }} Topik</span>
                         </div>
                         <ul class="space-y-2 text-xs text-slate-600">
                             @foreach($prog->curriculumItems->take(6) as $item)
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="space-y-2 pt-4 border-t border-slate-200">
-                        <a href="{{ route('register', ['program' => $prog->slug]) }}" class="block w-full py-3 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs text-center shadow transition-all">
+                        <a href="{{ route('register', ['program' => $prog->slug]) }}" class="block w-full py-3 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs text-center shadow transition-all">
                             Daftar di Program Ini &rarr;
                         </a>
                         <a href="{{ route('programs.detail', $prog->slug) }}" class="block w-full py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 font-semibold text-xs text-center border border-slate-200 transition-colors">

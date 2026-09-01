@@ -10,7 +10,7 @@
             <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm flex flex-col justify-between space-y-4">
                 <div class="space-y-3">
                     <div class="flex items-center justify-between">
-                        <div class="w-10 h-10 rounded-xl bg-primary-100 text-primary-700 flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-xl bg-rose-100 text-primary-700 flex items-center justify-center">
                             <i data-lucide="{{ $mat->type == 'video' ? 'video' : ($mat->type == 'link' ? 'link' : 'file-text') }}" class="w-5 h-5"></i>
                         </div>
                         <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-0.5 rounded-md">

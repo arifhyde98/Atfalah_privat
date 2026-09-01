@@ -48,7 +48,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="w-full py-2.5 bg-primary-700 hover:bg-primary-800 text-white font-bold rounded-xl shadow transition-colors">
+            <button type="submit" class="w-full py-2.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl shadow transition-colors">
                 Buat Kelas Baru
             </button>
         </form>
@@ -66,7 +66,7 @@
                             <div class="font-bold text-base text-slate-900">{{ $cls->name }}</div>
                             <div class="text-xs text-primary-700 font-semibold">{{ $cls->program->name }} | Guru: {{ $cls->teacher->name }}</div>
                         </div>
-                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-rose-100 text-emerald-800">
                             {{ ucfirst($cls->status) }}
                         </span>
                     </div>

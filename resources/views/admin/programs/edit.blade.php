@@ -45,7 +45,7 @@
                     <option value="draft" {{ $program->status == 'draft' ? 'selected' : '' }}>Draft</option>
                     <option value="inactive" {{ $program->status == 'inactive' ? 'selected' : '' }}>Inactive</option>
                 </select>
-                <button type="submit" class="px-6 py-2.5 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow transition-colors">
+                <button type="submit" class="px-6 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow transition-colors">
                     Simpan Perubahan Program
                 </button>
             </div>
@@ -79,7 +79,7 @@
                     </select>
                 </div>
                 <div class="sm:col-span-2">
-                    <button type="submit" class="w-full py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow transition-colors">
+                    <button type="submit" class="w-full py-2 bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs rounded-xl shadow transition-colors">
                         Tambah
                     </button>
                 </div>
@@ -91,7 +91,7 @@
             @forelse($program->curriculumItems as $item)
                 <div class="p-4 rounded-2xl bg-white border border-slate-200 flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <span class="w-7 h-7 rounded-lg bg-primary-800 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">
+                        <span class="w-7 h-7 rounded-lg bg-rose-800 text-white font-bold text-xs flex items-center justify-center flex-shrink-0">
                             {{ $item->sequence }}
                         </span>
                         <div>

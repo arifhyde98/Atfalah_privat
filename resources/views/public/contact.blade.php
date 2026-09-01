@@ -6,7 +6,7 @@
 <div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
     <div class="max-w-4xl mx-auto px-4 text-center space-y-3 relative z-10">
         <div class="text-gold-400 font-quran text-2xl mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
             <span>۞</span> Layanan Konsultasi <span>۞</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Hubungi Konsultan ATFALAH</h1>
@@ -22,7 +22,7 @@
             <h3 class="text-xl font-bold text-slate-900">Saluran Komunikasi Resmi</h3>
             <div class="space-y-4 text-xs text-slate-600">
                 <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-rose-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
                         <i data-lucide="message-circle" class="w-5 h-5"></i>
                     </div>
                     <div>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="pt-4 border-t border-slate-100">
-                <a href="https://wa.me/6281234567890" target="_blank" class="block w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs text-center shadow transition-colors">
+                <a href="https://wa.me/6281234567890" target="_blank" class="block w-full py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs text-center shadow transition-colors">
                     Chat WhatsApp Langsung &rarr;
                 </a>
             </div>
@@ -74,7 +74,7 @@
                     <label class="block text-xs font-semibold text-slate-700 mb-1">Pertanyaan / Kebutuhan</label>
                     <textarea rows="3" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs outline-none focus:border-primary-600"></textarea>
                 </div>
-                <button type="submit" class="w-full py-3 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow transition-colors">
+                <button type="submit" class="w-full py-3 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow transition-colors">
                     Kirim Pesan
                 </button>
             </form>

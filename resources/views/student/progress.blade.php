@@ -16,7 +16,7 @@
                         <span class="text-xs font-bold text-primary-700">{{ $rec->score }}%</span>
                     </div>
                     <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
-                        <div class="h-full bg-primary-600 rounded-full" style="width: {{ $rec->score }}%"></div>
+                        <div class="h-full bg-rose-600 rounded-full" style="width: {{ $rec->score }}%"></div>
                     </div>
                     <div class="flex items-center justify-between text-[11px] text-slate-500">
                         <span>Tingkat Level:</span>
@@ -38,7 +38,7 @@
                 <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
                         <div>
-                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-md">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-rose-100 px-2.5 py-0.5 rounded-md">
                                 Assessment {{ ucfirst($ass->type) }}
                             </span>
                             <div class="text-base font-bold text-slate-900 mt-1">Penguji: {{ $ass->teacher->name }}</div>

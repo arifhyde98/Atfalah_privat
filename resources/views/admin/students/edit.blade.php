@@ -40,7 +40,7 @@
         </div>
 
         <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
-            <button type="submit" class="px-6 py-2.5 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow transition-colors">
+            <button type="submit" class="px-6 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow transition-colors">
                 Perbarui Data Student
             </button>
             <a href="{{ route('admin.students.index') }}" class="px-4 py-2.5 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold">Batal</a>

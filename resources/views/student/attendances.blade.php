@@ -28,7 +28,7 @@
                         </td>
                         <td class="py-4 px-4">{{ $att->schedule->teacher->name }}</td>
                         <td class="py-4 px-4">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $att->status == 'present' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $att->status == 'present' ? 'bg-rose-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
                                 {{ ucfirst($att->status) }}
                             </span>
                         </td>

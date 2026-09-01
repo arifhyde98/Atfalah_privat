@@ -44,7 +44,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="w-full py-2.5 bg-primary-700 hover:bg-primary-800 text-white font-bold rounded-xl shadow transition-colors">
+            <button type="submit" class="w-full py-2.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl shadow transition-colors">
                 Simpan Enrollment
             </button>
         </form>
@@ -71,7 +71,7 @@
                             <td class="py-4 px-4 font-medium text-slate-800">{{ $enr->program->name }}</td>
                             <td class="py-4 px-4">{{ \Carbon\Carbon::parse($enr->start_date)->format('d M Y') }}</td>
                             <td class="py-4 px-4">
-                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $enr->status == 'active' ? 'bg-emerald-100 text-emerald-800' : ($enr->status == 'pending' ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-800') }}">
+                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $enr->status == 'active' ? 'bg-rose-100 text-emerald-800' : ($enr->status == 'pending' ? 'bg-amber-100 text-amber-800' : 'bg-slate-100 text-slate-800') }}">
                                     {{ ucfirst($enr->status) }}
                                 </span>
                             </td>
@@ -81,7 +81,7 @@
                                         @csrf
                                         @method('PATCH')
                                         <input type="hidden" name="status" value="active">
-                                        <button type="submit" class="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-[10px] font-bold">
+                                        <button type="submit" class="px-2.5 py-1 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-[10px] font-bold">
                                             Aktifkan
                                         </button>
                                     </form>

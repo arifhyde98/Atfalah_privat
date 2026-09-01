@@ -50,7 +50,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="w-full py-2.5 bg-primary-700 hover:bg-primary-800 text-white font-bold rounded-xl shadow transition-colors">
+            <button type="submit" class="w-full py-2.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl shadow transition-colors">
                 Simpan Jadwal Sesi
             </button>
         </form>
@@ -79,7 +79,7 @@
                             <td class="py-4 px-4 font-semibold text-slate-800">{{ $sch->classModel->name }}</td>
                             <td class="py-4 px-4">{{ $sch->teacher->name }}</td>
                             <td class="py-4 px-4">
-                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-emerald-100 text-emerald-800' : 'bg-sky-100 text-sky-800' }}">
+                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-rose-100 text-emerald-800' : 'bg-sky-100 text-sky-800' }}">
                                     {{ ucfirst($sch->status) }}
                                 </span>
                             </td>

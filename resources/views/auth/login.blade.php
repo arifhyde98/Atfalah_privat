@@ -6,7 +6,7 @@
 <div class="min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-slate-50">
     <div class="max-w-md w-full space-y-8 bg-white p-8 sm:p-10 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50">
         <div class="text-center">
-            <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-primary-800 to-primary-600 flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-primary-700/20">
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-rose-800 to-rose-600 flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-primary-700/20">
                 أ
             </div>
             <h2 class="mt-6 text-2xl font-extrabold text-slate-900 tracking-tight">
@@ -55,7 +55,7 @@
                 <a href="https://wa.me/6281234567890" target="_blank" class="text-primary-700 font-semibold hover:underline">Lupa kata sandi?</a>
             </div>
 
-            <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-semibold text-sm shadow-lg shadow-primary-700/25 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+            <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-semibold text-sm shadow-lg shadow-primary-700/25 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
                 <span>Masuk ke Akun</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </button>

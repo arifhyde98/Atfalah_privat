@@ -6,7 +6,7 @@
 <div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
     <div class="max-w-4xl mx-auto px-4 text-center space-y-3 relative z-10">
         <div class="text-gold-400 font-quran text-2xl mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
             <span>۞</span> Sanad & Asatidz <span>۞</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Dewan Guru ATFALAH PRIVATE</h1>
@@ -20,13 +20,13 @@
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         @foreach($teachers as $teacher)
             <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row gap-6 items-start">
-                <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-primary-800 to-primary-600 text-white flex items-center justify-center font-bold text-3xl flex-shrink-0 shadow-md">
+                <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-rose-800 to-rose-600 text-white flex items-center justify-center font-bold text-3xl flex-shrink-0 shadow-md">
                     {{ strtoupper(substr($teacher->name, 0, 1)) }}
                 </div>
                 <div class="space-y-3 flex-1">
                     <div>
                         <h3 class="text-xl font-bold text-slate-900">{{ $teacher->name }}</h3>
-                        <span class="text-xs font-semibold text-primary-700 bg-primary-50 px-2.5 py-1 rounded-md inline-block mt-1">
+                        <span class="text-xs font-semibold text-primary-700 bg-rose-50 px-2.5 py-1 rounded-md inline-block mt-1">
                             {{ $teacher->teacherProfile->specialization ?? 'Pengajar Qur\'an' }}
                         </span>
                     </div>

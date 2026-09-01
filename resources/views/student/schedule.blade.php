@@ -32,7 +32,7 @@
                             <div class="font-medium text-slate-800">{{ $sch->teacher->name }}</div>
                         </td>
                         <td class="py-4 px-4">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-emerald-100 text-emerald-800' : ($sch->status == 'scheduled' ? 'bg-sky-100 text-sky-800' : 'bg-rose-100 text-rose-800') }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-rose-100 text-emerald-800' : ($sch->status == 'scheduled' ? 'bg-sky-100 text-sky-800' : 'bg-rose-100 text-rose-800') }}">
                                 {{ ucfirst($sch->status) }}
                             </span>
                         </td>
@@ -50,7 +50,7 @@
                         </td>
                         <td class="py-4 px-4 text-right">
                             @if($sch->meeting_url && $sch->status == 'scheduled')
-                                <a href="{{ $sch->meeting_url }}" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px] shadow transition-colors">
+                                <a href="{{ $sch->meeting_url }}" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-[11px] shadow transition-colors">
                                     <i data-lucide="video" class="w-3.5 h-3.5"></i> Buka Link Meet
                                 </a>
                             @else

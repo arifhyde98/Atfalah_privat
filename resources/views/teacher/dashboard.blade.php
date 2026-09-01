@@ -8,7 +8,7 @@
     <!-- Top Stats -->
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-center gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-emerald-700 flex items-center justify-center">
                 <i data-lucide="calendar" class="w-6 h-6"></i>
             </div>
             <div>
@@ -56,7 +56,7 @@
                         <div class="space-y-1">
                             <div class="flex items-center gap-2">
                                 <span class="font-bold text-xs text-slate-900">{{ \Carbon\Carbon::parse($sch->date)->isoFormat('dddd, D MMM') }}</span>
-                                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">{{ substr($sch->start_time, 0, 5) }} - {{ substr($sch->end_time, 0, 5) }} WIB</span>
+                                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-100 text-emerald-800">{{ substr($sch->start_time, 0, 5) }} - {{ substr($sch->end_time, 0, 5) }} WIB</span>
                             </div>
                             <div class="text-xs font-semibold text-slate-800">{{ $sch->classModel->name }}</div>
                             <div class="text-[11px] text-slate-500">Santri: <strong>{{ $sch->classModel->students->pluck('name')->join(', ') }}</strong></div>
@@ -64,7 +64,7 @@
 
                         <div class="flex items-center gap-2">
                             @if($sch->meeting_url)
-                                <a href="{{ $sch->meeting_url }}" target="_blank" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors flex items-center gap-1">
+                                <a href="{{ $sch->meeting_url }}" target="_blank" class="px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition-colors flex items-center gap-1">
                                     <i data-lucide="video" class="w-3.5 h-3.5"></i> Google Meet
                                 </a>
                             @endif
@@ -93,7 +93,7 @@
                     <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-slate-900">{{ $cls->name }}</span>
-                            <span class="text-[10px] font-bold text-primary-700 bg-primary-100 px-2 py-0.5 rounded-full">{{ $cls->students_count }} Santri</span>
+                            <span class="text-[10px] font-bold text-primary-700 bg-rose-100 px-2 py-0.5 rounded-full">{{ $cls->students_count }} Santri</span>
                         </div>
                         <div class="text-[11px] text-slate-500">Program: <strong>{{ $cls->program->name }}</strong> (Level: {{ $cls->level ?? 'Standard' }})</div>
                     </div>

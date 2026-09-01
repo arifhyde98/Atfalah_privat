@@ -9,7 +9,7 @@
         <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
                 <div>
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-md">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-rose-100 px-2.5 py-0.5 rounded-md">
                         {{ $cls->status }}
                     </span>
                     <h2 class="text-xl font-bold text-slate-900 mt-2">{{ $cls->name }}</h2>
@@ -26,7 +26,7 @@
                     @forelse($cls->students as $std)
                         <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
                             <div class="flex items-center gap-3">
-                                <div class="w-8 h-8 rounded-full bg-primary-800 text-white font-bold text-xs flex items-center justify-center">
+                                <div class="w-8 h-8 rounded-full bg-rose-800 text-white font-bold text-xs flex items-center justify-center">
                                     {{ strtoupper(substr($std->name, 0, 1)) }}
                                 </div>
                                 <div class="flex-1 min-w-0">

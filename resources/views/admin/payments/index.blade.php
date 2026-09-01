@@ -43,7 +43,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="w-full py-2.5 bg-primary-700 hover:bg-primary-800 text-white font-bold rounded-xl shadow transition-colors">
+            <button type="submit" class="w-full py-2.5 bg-rose-700 hover:bg-rose-800 text-white font-bold rounded-xl shadow transition-colors">
                 Terbitkan Invoice
             </button>
         </form>
@@ -70,7 +70,7 @@
                             <td class="py-4 px-4 font-medium text-slate-800">{{ $pay->student->name }}</td>
                             <td class="py-4 px-4 font-bold text-slate-900">Rp {{ number_format($pay->amount, 0, ',', '.') }}</td>
                             <td class="py-4 px-4">
-                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $pay->status == 'paid' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
+                                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $pay->status == 'paid' ? 'bg-rose-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
                                     {{ ucfirst($pay->status) }}
                                 </span>
                             </td>
@@ -80,7 +80,7 @@
                                         @csrf
                                         @method('PATCH')
                                         <input type="hidden" name="status" value="paid">
-                                        <button type="submit" class="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-[10px] font-bold">
+                                        <button type="submit" class="px-2.5 py-1 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-[10px] font-bold">
                                             Tandai Lunas
                                         </button>
                                     </form>

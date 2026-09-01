@@ -4,36 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'ATFALAH PRIVATE — Qur\'an & Islamic Studies Programs')</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#ecfdf5',
-                            100: '#d1fae5',
-                            500: '#10b981',
-                            600: '#059669',
-                            700: '#047857',
-                            800: '#065f46',
-                            900: '#064e3b',
-                        },
-                        gold: {
-                            400: '#fbbf24',
-                            500: '#f59e0b',
-                            600: '#d97706',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        arabic: ['Amiri', 'Traditional Arabic', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind CSS (Vite) -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Alpine.js & Vue.js 3 -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
@@ -66,20 +38,20 @@
         .font-arabic { font-family: 'Amiri', 'Traditional Arabic', serif; }
         .font-quran { font-family: 'Amiri Quran', 'Scheherazade New', serif; }
         .bg-islamic-pattern {
-            background-color: #064e3b;
-            background-image: radial-gradient(rgba(251, 191, 36, 0.15) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px);
+            background-color: #881337;
+            background-image: radial-gradient(rgba(251, 191, 36, 0.15) 1px, transparent 1px), radial-gradient(rgba(225, 29, 72, 0.1) 1px, transparent 1px);
             background-size: 28px 28px;
             background-position: 0 0, 14px 14px;
         }
         .bg-islamic-subtle {
             background-color: #f8fafc;
-            background-image: radial-gradient(#059669 0.65px, transparent 0.65px), radial-gradient(#059669 0.65px, #f8fafc 0.65px);
+            background-image: radial-gradient(#e11d48 0.65px, transparent 0.65px), radial-gradient(#e11d48 0.65px, #f8fafc 0.65px);
             background-size: 26px 26px;
             background-position: 0 0, 13px 13px;
             background-opacity: 0.05;
         }
         .islamic-border {
-            border-image: linear-gradient(to right, #047857, #fbbf24, #047857) 1;
+            border-image: linear-gradient(to right, #be123c, #fbbf24, #be123c) 1;
         }
         .islamic-card {
             position: relative;
@@ -100,7 +72,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
     <!-- Top Bar Notice -->
-    <div class="bg-primary-900 text-primary-100 text-xs py-2 px-4 text-center font-medium tracking-wide">
+    <div class="bg-rose-900 text-primary-100 text-xs py-2 px-4 text-center font-medium tracking-wide">
         ✨ Program Pembelajaran Privat Al-Qur'an & Islamic Studies Personal Berbasis Progress. <a href="{{ route('assessment') }}" class="underline text-gold-400 font-semibold ml-1 hover:text-white">Cek Rekomendasi Level Belajarmu &rarr;</a>
     </div>
 
@@ -109,7 +81,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-primary-800 to-primary-600 flex items-center justify-center text-white shadow-md shadow-primary-700/20 group-hover:scale-105 transition-transform">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-800 to-rose-600 flex items-center justify-center text-white shadow-md shadow-primary-700/20 group-hover:scale-105 transition-transform">
                     <span class="font-bold text-xl tracking-tighter">أ</span>
                 </div>
                 <div>
@@ -130,7 +102,7 @@
 
             <!-- Action Buttons -->
             <div class="hidden md:flex items-center gap-3">
-                <a href="{{ route('assessment') }}" class="px-4 py-2 text-xs font-semibold rounded-xl border border-primary-600 text-primary-700 hover:bg-primary-50 transition-colors">
+                <a href="{{ route('assessment') }}" class="px-4 py-2 text-xs font-semibold rounded-xl border border-primary-600 text-primary-700 hover:bg-rose-50 transition-colors">
                     Placement Test
                 </a>
                 @auth
@@ -139,11 +111,11 @@
                             Admin Portal
                         </a>
                     @elseif(auth()->user()->isTeacher())
-                        <a href="{{ route('teacher.dashboard') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-primary-700 text-white hover:bg-primary-800 transition-colors shadow">
+                        <a href="{{ route('teacher.dashboard') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-rose-700 text-white hover:bg-rose-800 transition-colors shadow">
                             Teacher Portal
                         </a>
                     @else
-                        <a href="{{ route('student.dashboard') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-primary-700 text-white hover:bg-primary-800 transition-colors shadow">
+                        <a href="{{ route('student.dashboard') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-rose-700 text-white hover:bg-rose-800 transition-colors shadow">
                             Dashboard Student
                         </a>
                     @endif
@@ -151,7 +123,7 @@
                     <a href="{{ route('login') }}" class="px-4 py-2 text-xs font-semibold text-slate-700 hover:text-primary-700 transition-colors">
                         Masuk
                     </a>
-                    <a href="{{ route('register') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-primary-700 text-white hover:bg-primary-800 transition-all shadow-md shadow-primary-700/20 hover:shadow-lg hover:-translate-y-0.5">
+                    <a href="{{ route('register') }}" class="px-4 py-2 text-xs font-semibold rounded-xl bg-rose-700 text-white hover:bg-rose-800 transition-all shadow-md shadow-primary-700/20 hover:shadow-lg hover:-translate-y-0.5">
                         Daftar Belajar
                     </a>
                 @endauth
@@ -171,10 +143,10 @@
                     <a href="{{ route('assessment') }}" class="text-primary-700 font-semibold">Placement Assessment</a>
                     <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
                         @auth
-                            <a href="{{ route('login') }}" class="w-full text-center py-2.5 bg-primary-700 text-white rounded-xl font-semibold text-sm">Masuk Portal</a>
+                            <a href="{{ route('login') }}" class="w-full text-center py-2.5 bg-rose-700 text-white rounded-xl font-semibold text-sm">Masuk Portal</a>
                         @else
                             <a href="{{ route('login') }}" class="w-full text-center py-2 text-slate-700 font-medium text-sm">Masuk</a>
-                            <a href="{{ route('register') }}" class="w-full text-center py-2.5 bg-primary-700 text-white rounded-xl font-semibold text-sm">Daftar Sekarang</a>
+                            <a href="{{ route('register') }}" class="w-full text-center py-2.5 bg-rose-700 text-white rounded-xl font-semibold text-sm">Daftar Sekarang</a>
                         @endauth
                     </div>
                 </div>
@@ -186,7 +158,7 @@
     <main class="flex-grow">
         @if(session('success'))
             <div class="max-w-7xl mx-auto px-4 mt-6">
-                <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-2xl flex items-center gap-3">
+                <div class="bg-rose-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-2xl flex items-center gap-3">
                     <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
                     <p class="text-sm font-medium">{{ session('success') }}</p>
                 </div>
@@ -211,7 +183,7 @@
                 <!-- Brand Info -->
                 <div class="md:col-span-1 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-primary-600 to-primary-400 flex items-center justify-center text-white font-bold text-lg">
+                        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-400 flex items-center justify-center text-white font-bold text-lg">
                             أ
                         </div>
                         <span class="font-bold text-white text-lg tracking-tight">ATFALAH PRIVATE</span>
@@ -254,7 +226,7 @@
                     <p class="text-xs text-slate-400 mb-3 leading-relaxed">
                         Ingin konsultasi pemilihan jadwal atau rekomendasi guru sebelum mendaftar?
                     </p>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-semibold transition-colors shadow">
+                    <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xs font-semibold transition-colors shadow">
                         <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Konsultan
                     </a>
                 </div>

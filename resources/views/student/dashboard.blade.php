@@ -6,7 +6,7 @@
 @section('content')
 <div class="space-y-8">
     <!-- Top Summary Banner -->
-    <div class="bg-gradient-to-r from-primary-900 via-primary-800 to-teal-900 rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
+    <div class="bg-gradient-to-r from-rose-900 via-rose-800 to-teal-900 rounded-3xl p-6 sm:p-8 text-white shadow-lg relative overflow-hidden">
         <div class="absolute -right-8 -bottom-8 opacity-10">
             <i data-lucide="book-open" class="w-48 h-48"></i>
         </div>
@@ -46,7 +46,7 @@
                         <i data-lucide="video" class="w-3.5 h-3.5"></i> {{ substr($nextSchedule->start_time, 0, 5) }} - {{ substr($nextSchedule->end_time, 0, 5) }} WIB
                     </div>
                     @if($nextSchedule->meeting_url)
-                        <a href="{{ $nextSchedule->meeting_url }}" target="_blank" class="block w-full py-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-center font-bold text-xs rounded-xl shadow transition-colors mt-2">
+                        <a href="{{ $nextSchedule->meeting_url }}" target="_blank" class="block w-full py-2 bg-rose-500 hover:bg-rose-400 text-slate-950 text-center font-bold text-xs rounded-xl shadow transition-colors mt-2">
                             Masuk Google Meet &rarr;
                         </a>
                     @endif
@@ -77,7 +77,7 @@
                             <span class="text-primary-700 font-bold">{{ $rec->score ?? 80 }}% ({{ ucfirst($rec->level) }})</span>
                         </div>
                         <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-primary-600 to-emerald-400 rounded-full" style="width: {{ $rec->score ?? 80 }}%"></div>
+                            <div class="h-full bg-gradient-to-r from-rose-600 to-rose-400 rounded-full" style="width: {{ $rec->score ?? 80 }}%"></div>
                         </div>
                     </div>
                 @empty
@@ -98,7 +98,7 @@
 
             @if($latestFeedback)
                 <div class="space-y-3.5 text-xs">
-                    <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100">
+                    <div class="p-3.5 rounded-2xl bg-rose-50/70 border border-emerald-100">
                         <span class="font-bold text-emerald-800 flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5 text-emerald-600"></i> Kelebihan & Kemajuan:</span>
                         <p class="text-slate-700 mt-1 leading-relaxed">{{ $latestFeedback->strengths ?? 'Bacaan semakin percaya diri dan artikulatif.' }}</p>
                     </div>

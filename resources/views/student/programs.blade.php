@@ -9,7 +9,7 @@
         <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
                 <div>
-                    <span class="text-[11px] font-bold text-primary-700 uppercase bg-primary-50 px-2.5 py-1 rounded-full border border-primary-200">
+                    <span class="text-[11px] font-bold text-primary-700 uppercase bg-rose-50 px-2.5 py-1 rounded-full border border-primary-200">
                         {{ $enr->status }}
                     </span>
                     <h2 class="text-2xl font-bold text-slate-900 mt-2">{{ $enr->program->name }}</h2>
@@ -27,7 +27,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     @foreach($enr->program->curriculumItems as $item)
                         <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-100 flex items-center gap-3">
-                            <span class="w-6 h-6 rounded-lg bg-primary-700 text-white font-bold text-[11px] flex items-center justify-center flex-shrink-0">
+                            <span class="w-6 h-6 rounded-lg bg-rose-700 text-white font-bold text-[11px] flex items-center justify-center flex-shrink-0">
                                 {{ $item->sequence }}
                             </span>
                             <div class="flex-1 min-w-0">

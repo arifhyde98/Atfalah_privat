@@ -36,7 +36,7 @@
                 <textarea name="next_focus" rows="2" placeholder="Persiapan latihan ayat 1-20 surah An-Naba'..." class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:border-primary-600 outline-none"></textarea>
             </div>
 
-            <button type="submit" class="w-full py-3 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow transition-colors">
+            <button type="submit" class="w-full py-3 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow transition-colors">
                 Kirim Feedback ke Santri
             </button>
         </form>

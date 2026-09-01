@@ -31,13 +31,13 @@
                             <div class="text-slate-800">{{ $sch->classModel->students->pluck('name')->join(', ') }}</div>
                         </td>
                         <td class="py-4 px-4">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-emerald-100 text-emerald-800' : 'bg-sky-100 text-sky-800' }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $sch->status == 'completed' ? 'bg-rose-100 text-emerald-800' : 'bg-sky-100 text-sky-800' }}">
                                 {{ ucfirst($sch->status) }}
                             </span>
                         </td>
                         <td class="py-4 px-4 text-right space-x-2">
                             @if($sch->meeting_url)
-                                <a href="{{ $sch->meeting_url }}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-[11px]">
+                                <a href="{{ $sch->meeting_url }}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-[11px]">
                                     <i data-lucide="video" class="w-3.5 h-3.5"></i> Meet
                                 </a>
                             @endif

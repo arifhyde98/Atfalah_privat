@@ -24,7 +24,7 @@
                         <td class="py-4 px-4 font-medium text-slate-800">{{ $pay->enrollment->program->name ?? 'Paket Pembelajaran' }}</td>
                         <td class="py-4 px-4 font-bold text-slate-900">Rp {{ number_format($pay->amount, 0, ',', '.') }}</td>
                         <td class="py-4 px-4">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $pay->status == 'paid' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $pay->status == 'paid' ? 'bg-rose-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
                                 {{ ucfirst($pay->status) }}
                             </span>
                         </td>

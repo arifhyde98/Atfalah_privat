@@ -10,7 +10,7 @@
             <h3 class="text-base font-bold text-slate-900">Daftar Dewan Pengajar</h3>
             <p class="text-xs text-slate-500">Total: {{ $teachers->total() }} ustadz/ustadzah</p>
         </div>
-        <a href="{{ route('admin.teachers.create') }}" class="px-4 py-2.5 rounded-xl bg-primary-700 hover:bg-primary-800 text-white font-bold text-xs shadow flex items-center gap-1.5 transition-colors">
+        <a href="{{ route('admin.teachers.create') }}" class="px-4 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-800 text-white font-bold text-xs shadow flex items-center gap-1.5 transition-colors">
             <i data-lucide="user-plus" class="w-4 h-4"></i> Tambah Pengajar Baru
         </a>
     </div>
@@ -38,7 +38,7 @@
                         </td>
                         <td class="py-4 px-4">{{ $tch->teacherProfile->phone ?? '-' }}</td>
                         <td class="py-4 px-4">
-                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $tch->status == 'active' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-800' }}">
+                            <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $tch->status == 'active' ? 'bg-rose-100 text-emerald-800' : 'bg-slate-100 text-slate-800' }}">
                                 {{ ucfirst($tch->status) }}
                             </span>
                         </td>

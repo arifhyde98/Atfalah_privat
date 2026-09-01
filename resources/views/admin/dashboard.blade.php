@@ -8,7 +8,7 @@
     <!-- Key Metric Stats -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-center gap-4">
-            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-emerald-700 flex items-center justify-center">
                 <i data-lucide="users" class="w-6 h-6"></i>
             </div>
             <div>
@@ -64,7 +64,7 @@
                             <div class="font-bold text-slate-900">{{ $enr->student->name }}</div>
                             <div class="text-slate-500 text-[11px]">{{ $enr->program->name }}</div>
                         </div>
-                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $enr->status == 'active' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold {{ $enr->status == 'active' ? 'bg-rose-100 text-emerald-800' : 'bg-amber-100 text-amber-800' }}">
                             {{ ucfirst($enr->status) }}
                         </span>
                     </div>

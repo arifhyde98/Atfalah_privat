@@ -6,7 +6,7 @@
 <div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
     <div class="max-w-4xl mx-auto px-4 text-center space-y-3 relative z-10">
         <div class="text-gold-400 font-quran text-2xl mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
             <span>۞</span> Manhaj & Thariqah <span>۞</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Filosofi & Alur Belajar ATFALAH</h1>
@@ -21,7 +21,7 @@
         <!-- 4 Step Philosophy Detail -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-3 text-center">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto font-bold text-lg">1</div>
+                <div class="w-12 h-12 rounded-2xl bg-rose-100 text-emerald-700 flex items-center justify-center mx-auto font-bold text-lg">1</div>
                 <h3 class="text-base font-bold text-slate-900">READ</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">Belajar membaca huruf hijaiyah dari dasar, harakat, dan menyambung kata.</p>
             </div>
