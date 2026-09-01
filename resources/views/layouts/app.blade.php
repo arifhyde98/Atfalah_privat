@@ -48,7 +48,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Audio Web API & Interactive helper -->
     <style>
-        [x-cloak] { display: none !important; }
+        [x-cloak], [v-cloak] { display: none !important; }
         .glass-nav {
             background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(16px);
