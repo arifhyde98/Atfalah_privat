@@ -36,14 +36,45 @@
     </script>
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Google Fonts (Inter & Amiri) -->
+    <!-- Google Fonts (Inter, Amiri, Amiri Quran, Scheherazade New) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .font-arabic { font-family: 'Amiri', serif; }
+        .font-arabic { font-family: 'Amiri', 'Traditional Arabic', serif; }
+        .font-quran { font-family: 'Amiri Quran', 'Scheherazade New', serif; }
+        .bg-islamic-pattern {
+            background-color: #064e3b;
+            background-image: radial-gradient(rgba(251, 191, 36, 0.15) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+        }
+        .bg-islamic-subtle {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#059669 0.65px, transparent 0.65px), radial-gradient(#059669 0.65px, #f8fafc 0.65px);
+            background-size: 26px 26px;
+            background-position: 0 0, 13px 13px;
+            background-opacity: 0.05;
+        }
+        .islamic-border {
+            border-image: linear-gradient(to right, #047857, #fbbf24, #047857) 1;
+        }
+        .islamic-card {
+            position: relative;
+            overflow: hidden;
+        }
+        .islamic-card::before {
+            content: "﷽";
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            font-family: 'Amiri', serif;
+            font-size: 2.5rem;
+            color: rgba(16, 185, 129, 0.06);
+            pointer-events: none;
+        }
     </style>
     @yield('styles')
 </head>

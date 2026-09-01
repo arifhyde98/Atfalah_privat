@@ -3,12 +3,15 @@
 @section('title', 'Katalog Program — ATFALAH PRIVATE')
 
 @section('content')
-<div class="bg-primary-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <span class="text-xs font-bold tracking-widest text-gold-400 uppercase">Qur'an & Islamic Studies</span>
-        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Program Pembelajaran ATFALAH</h1>
-        <p class="text-sm sm:text-base text-primary-100 max-w-2xl mx-auto leading-relaxed">
-            Empat jenjang pembelajaran komprehensif yang dirancang untuk membimbing student mulai dari nol hingga memahami dan mengamalkan nilai Al-Qur'an.
+<div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10">
+        <div class="text-gold-400 font-quran text-2xl mb-2">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+            <span>۞</span> Manhaj Pembelajaran <span>۞</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Program Pembelajaran ATFALAH</h1>
+        <p class="text-sm sm:text-base text-emerald-100 max-w-2xl mx-auto leading-relaxed">
+            Empat jenjang pembelajaran komprehensif yang dirancang untuk membimbing santri mulai dari nol hingga memahami dan mengamalkan nilai Al-Qur'an.
         </p>
     </div>
 </div>

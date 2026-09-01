@@ -3,11 +3,14 @@
 @section('title', 'Tanya Jawab (FAQ) — ATFALAH PRIVATE')
 
 @section('content')
-<div class="bg-primary-900 text-white py-16">
-    <div class="max-w-4xl mx-auto px-4 text-center space-y-3">
-        <span class="text-xs font-bold tracking-widest text-gold-400 uppercase">Bantuan & Informasi</span>
-        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Pertanyaan yang Sering Diajukan</h1>
-        <p class="text-xs sm:text-sm text-primary-100 max-w-2xl mx-auto leading-relaxed">
+<div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-3 relative z-10">
+        <div class="text-gold-400 font-quran text-2xl mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-gold-500/30 text-xs font-bold tracking-widest text-gold-400 uppercase">
+            <span>۞</span> Tanya Jawab <span>۞</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Pertanyaan yang Sering Diajukan</h1>
+        <p class="text-xs sm:text-sm text-emerald-100 max-w-2xl mx-auto leading-relaxed">
             Temukan jawaban lengkap seputar sistem belajar privat, jadwal kelas, dan metode bimbingan di ATFALAH.
         </p>
     </div>
