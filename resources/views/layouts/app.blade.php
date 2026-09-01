@@ -42,6 +42,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Audio Web API & Interactive helper -->
+    <style>
+        [x-cloak] { display: none !important; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .pulse-gold {
+            animation: pulseGold 2.5s infinite;
+        }
+        @keyframes pulseGold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+            50% { box-shadow: 0 0 0 14px rgba(245, 158, 11, 0); }
+        }
+    </style>
     <style>
         .font-arabic { font-family: 'Amiri', 'Traditional Arabic', serif; }
         .font-quran { font-family: 'Amiri Quran', 'Scheherazade New', serif; }
@@ -253,6 +272,13 @@
 
     <script>
         lucide.createIcons();
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 700,
+                once: true,
+                easing: 'ease-out-cubic',
+            });
+        }
     </script>
     @yield('scripts')
 </body>
