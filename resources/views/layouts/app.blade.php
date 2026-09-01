@@ -34,8 +34,9 @@
             }
         }
     </script>
-    <!-- Alpine.js -->
+    <!-- Alpine.js & Vue.js 3 -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- Google Fonts (Inter, Amiri, Amiri Quran, Scheherazade New) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
