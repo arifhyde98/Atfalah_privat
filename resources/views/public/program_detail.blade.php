@@ -3,18 +3,21 @@
 @section('title', $program->name . ' — ATFALAH PRIVATE')
 
 @section('content')
-<div class="bg-gradient-to-b from-primary-900 to-slate-900 text-white py-20">
-    <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
-        <span class="text-xs font-bold tracking-widest text-gold-400 uppercase">{{ $program->tagline }}</span>
-        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">{{ $program->name }}</h1>
-        <p class="text-sm sm:text-base text-primary-100 max-w-3xl mx-auto leading-relaxed">
+<div class="bg-islamic-pattern text-white py-20 border-b-4 border-gold-500/80 relative">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-4 relative z-10">
+        <div class="text-gold-400 font-quran text-2xl mb-1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <span class="text-xs font-bold tracking-widest text-gold-400 uppercase bg-emerald-950/80 px-3.5 py-1 rounded-full border border-gold-500/30">
+            <span>۞</span> {{ $program->tagline }} <span>۞</span>
+        </span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">{{ $program->name }}</h1>
+        <p class="text-sm sm:text-base text-emerald-100 max-w-3xl mx-auto leading-relaxed">
             {{ $program->description }}
         </p>
-        <div class="pt-4 flex items-center justify-center gap-4">
-            <a href="{{ route('register', ['program' => $program->slug]) }}" class="px-6 py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-slate-950 font-bold text-xs shadow-lg transition-all">
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+            <a href="{{ route('register', ['program' => $program->slug]) }}" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-gold-400 to-amber-500 hover:from-gold-300 hover:to-amber-400 text-slate-950 font-bold text-xs shadow-lg transition-all border border-gold-300/40">
                 Daftar Kelas {{ $program->name }} &rarr;
             </a>
-            <a href="{{ route('assessment') }}" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs backdrop-blur transition-all">
+            <a href="{{ route('assessment') }}" class="px-6 py-3.5 rounded-xl bg-emerald-950/60 hover:bg-emerald-900 text-white font-semibold text-xs border border-emerald-500/30 transition-all">
                 Ikuti Placement Test
             </a>
         </div>
